@@ -1,4 +1,4 @@
-const myAge = 100;
+const myAge = 30;
 let attempts = 0;
 
 function checkGuess() {
@@ -27,3 +27,4 @@ function checkGuess() {
   }, 1200);
 
 }
+
