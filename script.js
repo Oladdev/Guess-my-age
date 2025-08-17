@@ -1,4 +1,4 @@
-const myAge = 19;
+const myAge = 100;
 let attempts = 0;
 
 function checkGuess() {
@@ -25,4 +25,5 @@ function checkGuess() {
   button.disabled = false;
     button.textContent = "Submit Guess";
   }, 1200);
+
 }
