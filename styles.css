@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Snapchat-371725616.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-size: auto 100%;
+  color: brown;
+  font-size: 20px;
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 100px;
+  border-radius: 60px;
+  width: 500px;
+  margin: 100px;
+  line-height: 1.6;
+}
+.name {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  line-height: 5rem;
+}
+input,
+button {
+  padding: 30px;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  background-color: brown;
+  color: white;
+}
+#message {
+  margin-top: 5px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #3498db;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 3px;
+  animation: blink 1s infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90vw;
+    padding: 50px;
+    border-radius: 30px;
+    margin: 20px;
+  }
+  body {
+    font-size: 20px;
+  }
+  .name {
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    line-height: 2rem;
+  }
+  input,
+  button {
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
